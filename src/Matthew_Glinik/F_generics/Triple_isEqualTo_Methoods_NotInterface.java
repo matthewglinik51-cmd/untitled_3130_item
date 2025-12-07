@@ -1,6 +1,7 @@
 package Matthew_Glinik.F_generics;
 
 public class Triple_isEqualTo_Methoods_NotInterface {
+    // 1115
     private boolean isEqualTo(Triple_isEqualTo_Methoods_NotInterface other)
     {
         return(false);
