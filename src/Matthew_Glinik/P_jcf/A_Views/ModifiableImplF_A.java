@@ -23,25 +23,29 @@ public class ModifiableImplF_A<E> implements InterfaceA<E> {
     @Override
     public boolean addFirst(E given_value_to_add) {
         String errorMessage = "the \"modifiable_view()\" is used to resize. ";
-        throw new Exception(errorMessage);
+        //throw new Exception(errorMessage);
+        return false;
     }
 
     @Override
     public E removeLast() {
         String errorMessage = "the \"modifiable_view()\" is used to resize. ";
-        throw new Exception(errorMessage);
+        //throw new Exception(errorMessage);
+        return null;
     }
 
     @Override
     public E removeFirst() {
         String errorMessage = "the \"modifiable_view()\" is used to resize. ";
-        throw new Exception(errorMessage);
+        //throw new Exception(errorMessage);
+        return null;
     }
 
     @Override
     public boolean addLast(E given_value_to_add) {
         String errorMessage = "the \"modifiable_view()\" is used to resize. ";
-        throw new Exception(errorMessage);
+        //throw new Exception(errorMessage);
+        return false;
     }
 
     @Override
