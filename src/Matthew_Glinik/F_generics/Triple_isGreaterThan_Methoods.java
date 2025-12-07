@@ -4,7 +4,6 @@ public interface Triple_isGreaterThan_Methoods<E> {
     // 1115
     boolean isGreaterThan(E other);
 
-    /*
     // 3115+
     default boolean greaterThan_s(E other, boolean given_isGreaterThan_Value)
     {
@@ -17,10 +16,11 @@ public interface Triple_isGreaterThan_Methoods<E> {
         {
             return(false);
         }
-        * /
+        */
         return((given_isGreaterThan_Value) || (isGreaterThan(other)));
     }
 
+    /*
     // 3115+: need boolean value to overload the methood in generics .
     default boolean greaterThan_s(Object other)
     {
@@ -34,5 +34,4 @@ public interface Triple_isGreaterThan_Methoods<E> {
         }
     }
     */
-    boolean greaterThan_s(Object other);
 }
