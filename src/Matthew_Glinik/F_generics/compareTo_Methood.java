@@ -42,12 +42,23 @@ public interface compareTo_Methood<E> extends Triple_isEqualTo_Methoods<E>, Trip
     // 3130 (Views)
     default int getComparasionNumber(E o)
     {
-        return(0);
+        return((new compareTo_Methood_Class<E>()).getComparasionNumber(o));
     }
     default int getFilterNumber(E o)
     {
-        return(0);
+        return((new compareTo_Methood_Class<E>()).getFilterNumber(o));
     }
 
-
+    class compareTo_Methood_Class<E>
+    {
+        private int comparasionNumber = 0, filterNumber = -1;
+        public int getComparasionNumber(E o)
+        {
+            return(comparasionNumber);
+        }
+        public int getFilterNumber(E o)
+        {
+            return(filterNumber);
+        }
+    }
 }
