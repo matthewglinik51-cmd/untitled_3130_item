@@ -21,6 +21,7 @@ public interface Triple_isGreaterThan_Methoods<E> {
     }
 
     // 3115+: need boolean value to overload the methood in generics .
+    /*
     default boolean greaterThan_s(Object other)
     {
         if(other instanceof E)
@@ -32,4 +33,5 @@ public interface Triple_isGreaterThan_Methoods<E> {
             return(false);
         }
     }
+    */
 }

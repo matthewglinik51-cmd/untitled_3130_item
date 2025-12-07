@@ -21,6 +21,7 @@ public interface Triple_isEqualTo_Methoods<E> {
     }
 
     // 3115+: need boolean value to overload the methood in generics .
+    /*
     default boolean equals(Object other)
     {
         if(other instanceof E)
@@ -32,4 +33,5 @@ public interface Triple_isEqualTo_Methoods<E> {
             return(false);
         }
     }
+    */
 }
