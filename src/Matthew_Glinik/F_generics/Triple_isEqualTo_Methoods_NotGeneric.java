@@ -17,7 +17,8 @@ public interface Triple_isEqualTo_Methoods_NotGeneric {
         }
     }
 
-    @Override
+    //@Override
+    /*
     default boolean equals(Object other)
     {
         if(other instanceof isEqualTo_NotGeneric)
@@ -29,5 +30,6 @@ public interface Triple_isEqualTo_Methoods_NotGeneric {
             return(false);
         }
     }
+    */
 }
 
