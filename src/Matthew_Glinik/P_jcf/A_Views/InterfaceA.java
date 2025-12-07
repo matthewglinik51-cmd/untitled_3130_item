@@ -85,7 +85,8 @@ public interface InterfaceA<E> extends Matthew_Glinik_Tool_Kit<E> {
 
             public InterfaceA_unmodifiable_VIEW(InterfaceA<E> original)
             {
-                this.original = UnmodifiableImplF_A<E>(original);
+                // this.original = UnmodifiableImplF_A<E>(original);
+                this.original = original;
             }
 
             public InterfaceA<E> original_view()
