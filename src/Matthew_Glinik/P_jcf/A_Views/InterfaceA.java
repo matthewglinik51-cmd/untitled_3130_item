@@ -12,6 +12,7 @@ public interface InterfaceA<E> extends Matthew_Glinik_Tool_Kit<E> {
     E setFirst(E given_value_to_set);
     E setLast(E given_value_to_set);
 
+    /*
     default InterfaceA<E> view()
     {
         return new InterfaceA_VIEW(this);
@@ -216,4 +217,5 @@ public interface InterfaceA<E> extends Matthew_Glinik_Tool_Kit<E> {
         private class InterfaceA_resizeable_VIEW<E> implements InterfaceA<E>
         {}
     }
+    */
 }
