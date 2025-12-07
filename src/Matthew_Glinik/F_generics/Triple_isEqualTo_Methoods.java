@@ -4,7 +4,7 @@ public interface Triple_isEqualTo_Methoods<E> {
     // 1115
     boolean isEqualTo(E other);
 
-    // 3115
+    // 3115 (3115+)
     default boolean equals(E other, boolean given_isEqualTo_Value)
     {
         /*
@@ -20,6 +20,7 @@ public interface Triple_isEqualTo_Methoods<E> {
         return((given_isEqualTo_Value) && (isEqualTo(other)));
     }
 
+    // 3115+: need boolean value to overload the methood in generics .
     default boolean equals(Object other)
     {
         if(other instanceof E)
