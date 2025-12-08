@@ -5,7 +5,7 @@ public interface Triple_isEqualTo_Methoods<E> {
     boolean isEqualTo(E other);
 
     // 3115 (3115+)
-    default boolean equals(E other, boolean given_isEqualTo_Value)
+    default <E_or_subclass_of_E extends E> boolean equals(E_or_subclass_of_E other, boolean given_isEqualTo_Value)
     {
         /*
         if(other.getClass() == E.class)
@@ -17,7 +17,15 @@ public interface Triple_isEqualTo_Methoods<E> {
             return(false);
         }
         */
-        return((given_isEqualTo_Value) && (isEqualTo(other)));
+        //return((given_isEqualTo_Value) && (isEqualTo(other)));
+        if(other.getClass() == E.class)
+        {
+            return((given_isEqualTo_Value) && (isEqualTo(other)));
+        }
+        else
+        {
+            return(false);
+        }
     }
 
     // 3115+: need boolean value to overload the methood in generics .
