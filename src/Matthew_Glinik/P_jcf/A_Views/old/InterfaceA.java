@@ -1,4 +1,4 @@
-package Matthew_Glinik.P_jcf.A_Views;
+package Matthew_Glinik.P_jcf.A_Views.old;
 
 import Matthew_Glinik.F_generics.Matthew_Glinik_Tool_Kit;
 
@@ -12,6 +12,7 @@ public interface InterfaceA<E> extends Matthew_Glinik_Tool_Kit<E> {
     E setFirst(E given_value_to_set);
     E setLast(E given_value_to_set);
 
+    /*
     default InterfaceA<E> view()
     {
         return new InterfaceA_VIEW(this);
@@ -33,50 +34,50 @@ public interface InterfaceA<E> extends Matthew_Glinik_Tool_Kit<E> {
 
         @Override
         public E getFirst() {
-            String errorMessage = "did not specify \"unmodifiable_view()/modifiable_view()/resizeable_view()\". ";
-            throw new RuntimeException(errorMessage);
+            String errorMessage = "did not specify \"unmodifiable_view()/modifiable_view()/resizeable_view()\". "
+            throw new Exception(errorMessage);
         }
 
         @Override
         public E getLast() {
-            String errorMessage = "did not specify \"unmodifiable_view()/modifiable_view()/resizeable_view()\". ";
-            throw new RuntimeException(errorMessage);
+            String errorMessage = "did not specify \"unmodifiable_view()/modifiable_view()/resizeable_view()\". "
+            throw new Exception(errorMessage);
         }
 
         @Override
         public boolean addFirst(E given_value_to_add) {
-            String errorMessage = "did not specify \"unmodifiable_view()/modifiable_view()/resizeable_view()\". ";
-            throw new RuntimeException(errorMessage);
+            String errorMessage = "did not specify \"unmodifiable_view()/modifiable_view()/resizeable_view()\". "
+            throw new Exception(errorMessage);
         }
 
         @Override
         public E removeLast() {
-            String errorMessage = "did not specify \"unmodifiable_view()/modifiable_view()/resizeable_view()\". ";
-            throw new RuntimeException(errorMessage);
+            String errorMessage = "did not specify \"unmodifiable_view()/modifiable_view()/resizeable_view()\". "
+            throw new Exception(errorMessage);
         }
 
         @Override
         public E removeFirst() {
-            String errorMessage = "did not specify \"unmodifiable_view()/modifiable_view()/resizeable_view()\". ";
-            throw new RuntimeException(errorMessage);
+            String errorMessage = "did not specify \"unmodifiable_view()/modifiable_view()/resizeable_view()\". "
+            throw new Exception(errorMessage);
         }
 
         @Override
         public boolean addLast(E given_value_to_add) {
-            String errorMessage = "did not specify \"unmodifiable_view()/modifiable_view()/resizeable_view()\". ";
-            throw new RuntimeException(errorMessage);
+            String errorMessage = "did not specify \"unmodifiable_view()/modifiable_view()/resizeable_view()\". "
+            throw new Exception(errorMessage);
         }
 
         @Override
         public E setFirst(E given_value_to_set) {
-            String errorMessage = "did not specify \"unmodifiable_view()/modifiable_view()/resizeable_view()\". ";
-            throw new RuntimeException(errorMessage);
+            String errorMessage = "did not specify \"unmodifiable_view()/modifiable_view()/resizeable_view()\". "
+            throw new Exception(errorMessage);
         }
 
         @Override
         public E setLast(E given_value_to_set) {
-            String errorMessage = "did not specify \"unmodifiable_view()/modifiable_view()/resizeable_view()\". ";
-            throw new RuntimeException(errorMessage);
+            String errorMessage = "did not specify \"unmodifiable_view()/modifiable_view()/resizeable_view()\". "
+            throw new Exception(errorMessage);
         }
 
         private class InterfaceA_unmodifiable_VIEW<E> implements InterfaceA<E>
@@ -85,7 +86,7 @@ public interface InterfaceA<E> extends Matthew_Glinik_Tool_Kit<E> {
 
             public InterfaceA_unmodifiable_VIEW(InterfaceA<E> original)
             {
-                this.original = new UnmodifiableImplF_A<>(original);
+                this.original = UnmodifiableImplF_A<E>(original);
                 // this.original = original;
             }
 
@@ -96,50 +97,50 @@ public interface InterfaceA<E> extends Matthew_Glinik_Tool_Kit<E> {
 
             @Override
             public E getFirst() {
-                String errorMessage = "did not specify \"modifiable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"unmodifiable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             @Override
             public E getLast() {
-                String errorMessage = "did not specify \"modifiable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"unmodifiable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             @Override
             public boolean addFirst(E given_value_to_add) {
-                String errorMessage = "did not specify \"modifiable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"unmodifiable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             @Override
             public E removeLast() {
-                String errorMessage = "did not specify \"modifiable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"unmodifiable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             @Override
             public E removeFirst() {
-                String errorMessage = "did not specify \"modifiable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"unmodifiable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             @Override
             public boolean addLast(E given_value_to_add) {
-                String errorMessage = "did not specify \"modifiable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"unmodifiable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             @Override
             public E setFirst(E given_value_to_set) {
-                String errorMessage = "did not specify \"modifiable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"unmodifiable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             @Override
             public E setLast(E given_value_to_set) {
-                String errorMessage = "did not specify \"modifiable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"unmodifiable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             private class InterfaceA_original_VIEW<E> implements InterfaceA<E>
@@ -257,9 +258,9 @@ public interface InterfaceA<E> extends Matthew_Glinik_Tool_Kit<E> {
         {
             private InterfaceA<E> original;
 
-            public InterfaceA_modifiable_VIEW(InterfaceA<E> original)
+            public InterfaceA_unmodifiable_VIEW(InterfaceA<E> original)
             {
-                this.original = new ModifiableImplF_A<>(original);
+                this.original = UnmodifiableImplF_A<E>(original);
                 // this.original = original;
             }
 
@@ -270,50 +271,50 @@ public interface InterfaceA<E> extends Matthew_Glinik_Tool_Kit<E> {
 
             @Override
             public E getFirst() {
-                String errorMessage = "did not specify \"modifiable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"modifiable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             @Override
             public E getLast() {
-                String errorMessage = "did not specify \"modifiable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"modifiable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             @Override
             public boolean addFirst(E given_value_to_add) {
-                String errorMessage = "did not specify \"modifiable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"modifiable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             @Override
             public E removeLast() {
-                String errorMessage = "did not specify \"modifiable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"modifiable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             @Override
             public E removeFirst() {
-                String errorMessage = "did not specify \"modifiable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"modifiable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             @Override
             public boolean addLast(E given_value_to_add) {
-                String errorMessage = "did not specify \"modifiable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"modifiable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             @Override
             public E setFirst(E given_value_to_set) {
-                String errorMessage = "did not specify \"modifiable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"modifiable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             @Override
             public E setLast(E given_value_to_set) {
-                String errorMessage = "did not specify \"modifiable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"modifiable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             private class InterfaceA_original_VIEW<E> implements InterfaceA<E>
@@ -433,7 +434,7 @@ public interface InterfaceA<E> extends Matthew_Glinik_Tool_Kit<E> {
 
             public InterfaceA_resizeable_VIEW(InterfaceA<E> original)
             {
-                this.original = new ResizeableImplF_A<>(original);
+                this.original = ResizeableImplF_A<E>(original);
                 // this.original = original;
             }
 
@@ -444,50 +445,50 @@ public interface InterfaceA<E> extends Matthew_Glinik_Tool_Kit<E> {
 
             @Override
             public E getFirst() {
-                String errorMessage = "did not specify \"resizeable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"resizeable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             @Override
             public E getLast() {
-                String errorMessage = "did not specify \"resizeable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"resizeable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             @Override
             public boolean addFirst(E given_value_to_add) {
-                String errorMessage = "did not specify \"resizeable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"resizeable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             @Override
             public E removeLast() {
-                String errorMessage = "did not specify \"resizeable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"resizeable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             @Override
             public E removeFirst() {
-                String errorMessage = "did not specify \"resizeable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"resizeable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             @Override
             public boolean addLast(E given_value_to_add) {
-                String errorMessage = "did not specify \"resizeable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"resizeable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             @Override
             public E setFirst(E given_value_to_set) {
-                String errorMessage = "did not specify \"resizeable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"resizeable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             @Override
             public E setLast(E given_value_to_set) {
-                String errorMessage = "did not specify \"resizeable_view()\" type. ";
-                throw new RuntimeException(errorMessage);
+                String errorMessage = "did not specify \"resizeable_view()\" type. "
+                throw new Exception(errorMessage);
             }
 
             private class InterfaceA_original_VIEW<E> implements InterfaceA<E>
@@ -596,4 +597,5 @@ public interface InterfaceA<E> extends Matthew_Glinik_Tool_Kit<E> {
             }
         }
     }
+    */
 }

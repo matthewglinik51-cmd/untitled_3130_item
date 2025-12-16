@@ -1,4 +1,4 @@
-package Matthew_Glinik.P_jcf.A_Views;
+package Matthew_Glinik.P_jcf.A_Views.old;
 
 public class UnmodifiableImplF_A<E> implements InterfaceA<E> {
     private InterfaceA<E> original;
@@ -21,36 +21,42 @@ public class UnmodifiableImplF_A<E> implements InterfaceA<E> {
     @Override
     public boolean addFirst(E given_value_to_add) {
         String errorMessage = "the \"unmodifiable_view()\" is used to resize. ";
-        throw new RuntimeException(errorMessage);
+        //throw new Exception(errorMessage);
+        return false;
     }
 
     @Override
     public E removeLast() {
         String errorMessage = "the \"unmodifiable_view()\" is used to resize. ";
-        throw new RuntimeException(errorMessage);
+        //throw new Exception(errorMessage);
+        return null;
     }
 
     @Override
     public E removeFirst() {
         String errorMessage = "the \"unmodifiable_view()\" is used to resize. ";
-        throw new RuntimeException(errorMessage);
+        //throw new Exception(errorMessage);
+        return null;
     }
 
     @Override
     public boolean addLast(E given_value_to_add) {
         String errorMessage = "the \"unmodifiable_view()\" is used to resize. ";
-        throw new RuntimeException(errorMessage);
+        //throw new Exception(errorMessage);
+        return false;
     }
 
     @Override
     public E setFirst(E given_value_to_set) {
         String errorMessage = "the \"unmodifiable_view()\" is used to modify. ";
-        throw new RuntimeException(errorMessage);
+        //throw new Exception(errorMessage);
+        return null;
     }
 
     @Override
     public E setLast(E given_value_to_set) {
         String errorMessage = "the \"unmodifiable_view()\" is used to modify. ";
-        throw new RuntimeException(errorMessage);
+        //throw new Exception(errorMessage);
+        return null;
     }
 }

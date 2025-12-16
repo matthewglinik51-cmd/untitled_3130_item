@@ -1,4 +1,4 @@
-package Matthew_Glinik.P_jcf.A_Views;
+package Matthew_Glinik.P_jcf.A_Views.old;
 
 public class ModifiableImplF_A<E> implements InterfaceA<E> {
     // private E[] elements;
@@ -23,25 +23,29 @@ public class ModifiableImplF_A<E> implements InterfaceA<E> {
     @Override
     public boolean addFirst(E given_value_to_add) {
         String errorMessage = "the \"modifiable_view()\" is used to resize. ";
-        throw new RuntimeException(errorMessage);
+        //throw new Exception(errorMessage);
+        return false;
     }
 
     @Override
     public E removeLast() {
         String errorMessage = "the \"modifiable_view()\" is used to resize. ";
-        throw new RuntimeException(errorMessage);
+        //throw new Exception(errorMessage);
+        return null;
     }
 
     @Override
     public E removeFirst() {
         String errorMessage = "the \"modifiable_view()\" is used to resize. ";
-        throw new RuntimeException(errorMessage);
+        //throw new Exception(errorMessage);
+        return null;
     }
 
     @Override
     public boolean addLast(E given_value_to_add) {
         String errorMessage = "the \"modifiable_view()\" is used to resize. ";
-        throw new RuntimeException(errorMessage);
+        //throw new Exception(errorMessage);
+        return false;
     }
 
     @Override
