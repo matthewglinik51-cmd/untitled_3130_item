@@ -9,6 +9,8 @@ public class InterfaceA_Demo {
         InterfaceA_E.addLast(20);
         InterfaceA_E.addFirst(23);
         InterfaceA<Integer> InterfaceA_E_VIEW = InterfaceA_E.view();
-        InterfaceA<Integer> InterfaceA_E_VIEW_unmodifiable = InterfaceA_E.view().unmodifiable_view();
+        InterfaceA<Integer> InterfaceA_E_VIEW_unmodifiable = InterfaceA_E_VIEW.unmodifiable_view();
+        InterfaceA<Integer> InterfaceA_E_VIEW_modifiable = InterfaceA_E_VIEW.modifiable_view();
+        InterfaceA<Integer> InterfaceA_E_VIEW_resizeable = InterfaceA_E_VIEW.resizeable_view();
     }
 }
